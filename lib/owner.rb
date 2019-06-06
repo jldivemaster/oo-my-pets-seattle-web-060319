@@ -16,14 +16,14 @@ class Owner
     @@all << self
   end
 
-  @@count = 0
+  @count = 0
   def self.new
-    @@count += 1
-    return @@count
+    @count += 1
+
   end
 
   def self.reset_all
-    @@count = 0
+    #@@count = 0
   end
 
   def species
