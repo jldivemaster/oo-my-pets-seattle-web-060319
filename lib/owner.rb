@@ -12,7 +12,7 @@ class Owner
     @pets
   end
 
-  def self.all
+  def Owner.all
     @@all << self
     return @@all
   end
@@ -23,7 +23,7 @@ class Owner
   end
 
   def Owner.reset_all
-    @@all.reset.all
+    @@all.reset_all
   end
 
   def species
