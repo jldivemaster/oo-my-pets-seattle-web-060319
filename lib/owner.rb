@@ -14,6 +14,7 @@ class Owner
 
   def self.all
     @@all << self
+    return @@all
   end
 
 
