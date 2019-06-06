@@ -1,11 +1,12 @@
 class Owner
-
-  attr_accessor :pets
+  @count = 0
+  
+  attr_accessor :pets, :count
 
   def initialize(pets)
     @pets = {fishes: [], cats: [], dogs: []}
     @@all = []
-
+    self.count += 1
   end
 
   def pets
@@ -16,11 +17,7 @@ class Owner
     @@all << self
   end
 
-  @count = 0
-  def self.count
-    @count += 1
-
-  end
+  
 
   def self.reset_all
     #@@count = 0
@@ -54,10 +51,10 @@ class Owner
   end
 
   def sell_pets
+    
   end
 
   def list_pets
-
     puts "I have #{@pets[:fishes].length} fish, #{@pets[:dogs].length} dog(s), and #{@pets[:cats].length} cat(s)."
   end
 
