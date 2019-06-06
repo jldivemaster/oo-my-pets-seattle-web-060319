@@ -14,12 +14,14 @@ class Owner
 
   end
 
+  @@count = 0
   def self.count
-
+  @@count += 1
+  return @@count
   end
 
   def self.reset_all
-    
+
   end
 
 
