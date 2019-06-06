@@ -15,7 +15,7 @@ class Owner
   end
 
   def Owner.all
-    @@all 
+    @@all
   end
 
 
