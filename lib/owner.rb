@@ -16,7 +16,7 @@ class Owner
     @@all << self
   end
 
-  
+
   def self.count
   @@count += 1
   return @@count
