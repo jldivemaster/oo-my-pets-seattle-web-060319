@@ -1,6 +1,6 @@
 class Owner
   @count = 0
-  
+
   attr_accessor :pets, :count
 
   def initialize(pets)
@@ -17,7 +17,7 @@ class Owner
     @@all << self
   end
 
-  
+
 
   def self.reset_all
     #@@count = 0
@@ -51,7 +51,7 @@ class Owner
   end
 
   def sell_pets
-    
+
   end
 
   def list_pets
