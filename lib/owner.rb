@@ -17,7 +17,7 @@ class Owner
   end
 
   @count = 0
-  def self.new
+  def self.count
     @count += 1
 
   end
