@@ -16,8 +16,8 @@ class Owner
     @@all << self
   end
 
-  @@count = 1
-  def self.count
+  @@count = 0
+  def self.new
     @@count += 1
     return @@count
   end
