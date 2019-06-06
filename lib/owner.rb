@@ -15,10 +15,10 @@ class Owner
     @@all << self
   end
 
-  @@ownercount = 0
+  @@count = 1
   def self.count
-  @@ownercount += 1
-  return @@ownercount
+  @@count += 1
+  return @@count
   end
 
   def self.reset_all
