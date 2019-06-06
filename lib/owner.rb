@@ -22,6 +22,6 @@ class Owner
     @pets[:fish] << name
   end
 
-  
+
 
 end
