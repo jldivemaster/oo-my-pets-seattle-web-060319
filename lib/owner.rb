@@ -1,5 +1,5 @@
 class Owner
-  @@count = 0
+  @@count = 1
   attr_accessor :pets
 
   def initialize(pets)
@@ -22,7 +22,7 @@ class Owner
   end
 
   def self.reset_all
-    #@@count = 0
+
   end
 
   def species
