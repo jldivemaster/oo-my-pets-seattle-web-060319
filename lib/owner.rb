@@ -22,8 +22,8 @@ class Owner
     @@count
   end
 
-  def self.reset_all
-
+  def Owner.reset_all
+    @@all.reset.all
   end
 
   def species
