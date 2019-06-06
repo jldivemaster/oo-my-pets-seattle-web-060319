@@ -36,6 +36,7 @@ class Owner
 
   def say_species
     puts "I am a #{self.species}."
+  end
 
   def buy_cat(name)
     cat = Cat.new(name)
