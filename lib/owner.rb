@@ -25,6 +25,8 @@ class Owner
     @@count = 0
   end
 
+  def species
+
 
   def buy_cat(name)
     @pets[:cats] << name
@@ -38,6 +40,20 @@ class Owner
     @pets[:fish] << name
   end
 
+  def walk_dogs
+  end
+
+  def play_with_cats
+  end
+
+  def feed_fish
+  end
+
+  def sell_pets
+  end
+
+  def list_pets
+  end
 
 
 end
