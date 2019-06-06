@@ -5,7 +5,7 @@ class Owner
   attr_reader :species, :name
   attr_accessor :pets
 
-  def initialize(pets)
+  def initialize(pets, species)
     @name = name
     @pets = {fishes: [], cats: [], dogs: []}
     @@count += 1
@@ -13,6 +13,14 @@ class Owner
     @species = species
   end
 
+  def species=(species)
+    @species = species
+  end
+
+  def say_species
+    puts "I am a #{self.species}."
+  end
+  
   def name=(name)
     @name = name
   end
@@ -25,7 +33,6 @@ class Owner
     @@all
   end
 
-
   def Owner.count
     @@count
   end
@@ -33,14 +40,6 @@ class Owner
   def Owner.reset_all
     @@all.clear
     @@count = 0
-  end
-
-  def species=(species)
-    @species = species
-  end
-
-  def say_species
-    puts "I am a #{self.species}."
   end
 
   def buy_cat(name)
