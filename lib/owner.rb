@@ -26,7 +26,7 @@ class Owner
   end
 
   def species
-
+  end
 
   def buy_cat(name)
     @pets[:cats] << name
@@ -54,6 +54,5 @@ class Owner
 
   def list_pets
   end
-
 
 end
