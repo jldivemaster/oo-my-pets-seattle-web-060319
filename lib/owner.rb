@@ -10,6 +10,19 @@ class Owner
     @pets
   end
 
+  def self.all
+
+  end
+
+  def self.count
+
+  end
+
+  def self.reset_all
+    self.reset_all
+  end
+
+
   def buy_cat(name)
     @pets[:cats] << name
   end
