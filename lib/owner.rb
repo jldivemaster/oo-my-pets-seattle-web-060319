@@ -30,8 +30,8 @@ class Owner
     @@count = 0
   end
 
-  def species
-    @species
+  def species=(species)
+    @species = species
   end
 
   def say_species
