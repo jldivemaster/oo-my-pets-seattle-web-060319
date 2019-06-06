@@ -20,7 +20,7 @@ class Owner
   def say_species
     puts "I am a #{self.species}."
   end
-  
+
   def name=(name)
     @name = name
   end
