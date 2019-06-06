@@ -13,8 +13,8 @@ class Owner
     @species = species
   end
 
-  def name
-    @name
+  def name=(name)
+    @name = name
   end
 
   def pets
@@ -35,8 +35,8 @@ class Owner
     @@count = 0
   end
 
-  def species
-    @species
+  def species=(species)
+    @species = species
   end
 
   def say_species
