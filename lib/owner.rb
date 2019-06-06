@@ -73,7 +73,7 @@ class Owner
   end
 
   def sell_pets
-    pets.empty = true
+    pets.empty? = true
     pets[:dogs].each do |pet|
       pet.mood = "nervous"
     end
